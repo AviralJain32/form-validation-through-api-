@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+    {{>navbar}}
+    <div class="flex flex-col justify-around justify-center items-center min-h-screen">
+    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 h-96 w-10/12  flex shadow-lg rounded-lg ">
+        <div class="my-44 mx-16 text-white flex-none max-lg:w-20 max-lg:mx-7 max-lg:my-36">
+            <h1 class="text-center">WELCOME</h1>
+            <p>to the REGISTRATION FORM</p>
+        </div>
+        <div class="flex-grow bg-white m-4 rounded-l-full p-5">
+            <h2 class="my-3 text-center">STUDENT REGISTRATION FORM</h2>
+            <form action="/" method="POST" class="grid grid-cols-2 max-lg:gap-4 gap-x-16 gap-y-4 py-5 px-10 ">
+                <input type="text" name="Fname" class="border border-blue-500 active:border-blue-700 rounded-lg p-1"  placeholder="Enter Your Name">
+                <input type="text" name="Lname" class="border border-blue-500 active:border-blue-700 rounded-lg p-1" placeholder="Enter Your Last Name">
+                <input type="text" name="Email" class="border border-blue-500 active:border-blue-700 rounded-lg p-1" placeholder="Enter Your Email">
+                <div>
+                    <input type="radio" name="gender" id="" value="Male">
+                    <label for="" class="mr-2">Male</label>
+                    <input type="radio" name="gender" id="" value="Female">
+                    <label for="">Female</label>
+                </div>
+                <input type="text" name="PhoneNumber" class="border border-blue-500 active:border-blue-700 rounded-lg p-1" placeholder="Enter Your Phone No.">
+                <input type="text" name="Age" class="border border-blue-500 active:border-blue-700 rounded-lg p-1" placeholder="Enter Your Age">
+                <input type="password" name="Password" class="border border-blue-500 active:border-blue-700 rounded-lg p-1" placeholder="Enter Your Password">
+                <input type="password" name="Cpassword" class="border border-blue-500 active:border-blue-700 rounded-lg p-1" placeholder="Confirm Password">
+                <button type="submit" value="Register" class="text-center absolute max-lg:translate-x-32 max-lg:translate-y-52 translate-x-[22rem] translate-y-[12rem] bg-blue-600 text-white border-2 p-2 rounded-3xl hover:bg-blue-900 active:bg-blue-950 border-blue-950">Register</button>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
